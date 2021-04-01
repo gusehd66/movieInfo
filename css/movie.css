@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+body {
+  overflow-x: hidden;
+  background: url(../image/bg.jpg);
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.starBg {
+  background: url(../image/star.png);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.top {
+  min-height: 300vh;
+}
+
+section.top h1.title {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding-top: 35vh;
+  font-size: 2em;
+}
+
+section.top h1.title div {
+  display: inline-block;
+  letter-spacing: 0.1rem;
+}
+
+section.top .left_movie {
+  height: 300vh;
+  margin-top: 410px;
+}
+
+section.top .left_movie ul {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20vh;
+}
+
+section.top .left_movie ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 200%;
+  height: 300px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.top .left_movie ul li:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+section.top .left_movie ul li .card {
+  background: url(../image/kong.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section.bottom {
+  background: url(../image/bottom.png) center bottom/100% no-repeat;
+  min-height: 60vh;
+  width: 100%;
+}
+
+section.bottom .topBtn {
+  position: absolute;
+  bottom: 10%;
+  right: 70px;
+  padding: 10px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: #eee;
+  border: 2px solid #eee;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+section.bottom .topBtn:hover {
+  background-color: #000;
+  border-color: #333;
+  color: #fff;
+}
