@@ -82,7 +82,10 @@ section.top .movie ul li.right {
 section.top .movie ul li .card {
   width: 200px;
   height: auto;
-  background: url(../image/kong.jpg) center/cover no-repeat;
+  background: url(../image/kong.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
