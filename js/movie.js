@@ -13,7 +13,7 @@ window.onload = function () {
         li[i].addEventListener("click", function () {
             if (this.classList[0] == "left") {
                 this.children[1].classList.toggle("active");
-                //li[0].children[0].style.background = "url(../image/" + bg[0] + ".jpg";
+                //li[0].children[0].style.background = "url(../image/" + bg[0] + ".jpg)";
             }
             else {
                 this.children[0].classList.toggle("active");
