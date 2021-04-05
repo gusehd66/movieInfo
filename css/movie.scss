@@ -65,11 +65,10 @@ section {
                     .card{
                         width: 200px;
                         height: auto;
-                        background: url(../image/kong.jpg);
-                        //center  / cover no-repeat;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
+                        background: url(../image/kong.jpg) center  / cover no-repeat;
+                        // background-repeat: no-repeat;
+                        // background-size: cover;
+                        // background-position: center;
                         transition : all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                         cursor: pointer;
                         border-radius: 6px 6px 6px 6px;
