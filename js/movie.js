@@ -21,7 +21,7 @@ window.onload = function () {
 
 
         })
-        card[i].style.background = "url(/image/" + mvInfo[i].mvtag + ".jpg)";
+        card[i].style.background = "url(./image/" + mvInfo[i].mvtag + ".jpg)";
         cardInfo[i].children[0].innerHTML = mvInfo[i].mvname;
         cardInfo[i].children[1].innerHTML = mvInfo[i].mvdesc;
         card[i].style.backgroundSize = "cover";
