@@ -4,23 +4,28 @@ window.onload = function () {
     var starBg = document.querySelector(".starBg");
     var title = document.querySelector(".title");
     var topBtn = document.querySelector(".topBtn");
-    //var card = document.getElementsByClassName("card");
-    //var cardInfo = document.getElementsByClassName("card_info");
     var li = document.getElementsByTagName("li");
+    const card = document.getElementsByClassName("card");
+    const cardInfo = document.getElementsByClassName("card_info");
 
+    //card_info 에 cative class add
     for (var i = 0; i < li.length; i++) {
         li[i].addEventListener("click", function () {
             if (this.classList[0] == "left") {
-                this.children[1].style.opacity = "1";
+                this.children[1].classList.toggle("active");
+                //li[0].children[0].style.background = "url(../image/" + bg[0] + ".jpg";
             }
             else {
-                this.children[0].style.opacity = "1";
+                this.children[0].classList.toggle("active");
             }
 
 
         })
+        card[i].style.background = "url(../image/" + mvInfo[i].mvtag + ".jpg";
+        cardInfo[i].children[0].innerHTML = mvInfo[i].mvname;
+        cardInfo[i].children[1].innerHTML = mvInfo[i].mvdesc;
+        card[i].style.backgroundSize = "cover";
     }
-
 
     //스크롤 이벤트
     window.addEventListener("scroll", function (event) {

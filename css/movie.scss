@@ -35,7 +35,7 @@ section {
         .movie {
             height: 300vh;
             width: 100vw;
-            margin-top: 410px;
+            margin-top: 455px;
             ul{
                 display: grid;
                 row-gap: 20vh;
@@ -47,36 +47,33 @@ section {
                     column-gap: 30px;
                     width: 100%;
                     height: auto;
-                    min-height: 260px;
                     padding: 10px;
                     position: relative;
                     color: #fff;
+                    min-height: 260px;
                     max-height: 300px;
+                    justify-items: center;
                     &.left{
-                        grid-template-columns: 1fr 40%;
+                        grid-template-columns: 1fr 35%;
                         text-align: left;
-                        justify-items: end;
                     }
                     &.right{
-                        grid-template-columns: 40% 1fr;
+                        grid-template-columns: 35% 1fr;
                         text-align: left;
                         padding-right: 20px;
                     }
                     .card{
-                        width: 100%;
+                        width: 200px;
                         height: auto;
-                        background: url(../image/kong.jpg);
-                        background-size:cover;
-                        background-repeat: no-repeat;
+                        background: url(../image/kong.jpg) center  / cover no-repeat;
                         transition : all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
                         cursor: pointer;
                         border-radius: 6px 6px 6px 6px;
                         box-sizing: border-box ;
-                        max-width: 500px;
-                        min-width: 100px;
                         &:hover {
                             transform: translateY(-20px);
                         }
+                        
                     }
                     .card_info{
                         opacity: 0;
@@ -84,10 +81,15 @@ section {
                         overflow: auto;
                         height: 100%;
                         width: 100%;
-                        
+                        h1 {
+                            margin-top:0;
+                        }
                         &.rtl{
                             direction: rtl;
                             text-align: right;
+                        }
+                        &.active{
+                            opacity: 1;
                         }
                         &::-webkit-scrollbar {
                             width: 6px;
@@ -103,7 +105,7 @@ section {
                             border-radius: 10px;
                             box-shadow: inset 0px 0px 5px white;
                         }
-
+                        
                     }
                 }
             }
@@ -111,9 +113,10 @@ section {
         }
     }
     &.bottom {
-        background: url(../image/bottom.png) center bottom / 100% no-repeat;
+        background: url(../image/bottom.png) center bottom / cover no-repeat;
         min-height: 30vh;
         width:100%;
+        height: 300px;
         
 
         .topBtn {
