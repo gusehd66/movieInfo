@@ -57,12 +57,10 @@ section.top .movie ul li {
   -webkit-column-gap: 30px;
           column-gap: 30px;
   width: 100%;
-  height: auto;
+  height: 300px;
   padding: 10px;
   position: relative;
   color: #fff;
-  min-height: 260px;
-  max-height: 300px;
   justify-items: center;
 }
 
