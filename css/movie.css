@@ -37,7 +37,7 @@ section.top h1.title div {
 }
 
 section.top .movie {
-  height: 300vh;
+  height: 100%;
   width: 100vw;
   margin-top: 455px;
 }
@@ -135,9 +135,9 @@ section.top .movie ul li .card_info::-webkit-scrollbar-track {
 
 section.bottom {
   background: url(../image/bottom.png) center bottom/cover no-repeat;
-  min-height: 25vh;
+  min-height: 30vh;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
 section.bottom .topBtn {

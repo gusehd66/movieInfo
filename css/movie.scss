@@ -33,7 +33,7 @@ section {
         }
         
         .movie {
-            height: 300vh;
+            height: 100%;
             width: 100vw;
             margin-top: 455px;
             ul{
@@ -115,9 +115,9 @@ section {
     }
     &.bottom {
         background: url(../image/bottom.png) center bottom / cover no-repeat;
-        min-height: 25vh;
+        min-height: 30vh;
         width:100%;
-        height: 200px;
+        height: 300px;
         
 
         .topBtn {
